@@ -1,4 +1,35 @@
 Rails.application.routes.draw do
+  get 'visits/new'
+  get 'visits/create'
+  get 'visits/edit'
+  get 'visits/update'
+  get 'visits/destroy'
+  get 'visits/index'
+  get 'visits/show'
+  resources :visits
+  get 'patients/new'
+  get 'patients/create'
+  get 'patients/edit'
+  get 'patients/update'
+  get 'patients/destroy'
+  get 'patients/index'
+  get 'patients/show'
+  resources :patients
+  get 'nurses/new'
+  get 'nurses/create'
+  get 'nurses/edit'
+  get 'nurses/update'
+  get 'nurses/destroy'
+  get 'nurses/index'
+  get 'nurses/show'
+  resources :nurses
+  get 'users/new'
+  get 'users/create'
+  get 'users/edit'
+  get 'users/update'
+  get 'users/destroy'
+  get 'users/index'
+  get 'users/show'
   resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
